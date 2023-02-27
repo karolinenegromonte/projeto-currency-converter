@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/conversor.css"/>
+    <title>currency converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>currency converter</h1>
+        </header>
+
+        <main>
+            <label>
+                converter <b>de</b>
+                <select>
+                    <option>
+                        R$ Real Brasileiro
+                    </option>
+                </select>
+            </label>
+            <label>
+                converter<b>para</b>
+                <select id="currency-select">
+                    <option>US$ Dólar americano</option>
+                    <option> € Euro</option>
+                    <option>₿ bitcoins</option>
+                </select>
+            </label>
+            <label>
+                Valor
+                <input  id="input-real" placeholder="R$10.000">
+            </label>
+
+            <button  id="convert-button" type="button">converter</button>
+
+            <section class="currency-container">
+                <div>
+                    <img src="../Assets/imagem-brasil.png" alt="imagem-brasil">
+                    <p class="currency-name">Real</p>
+                    <p class="currency-value" id="real-value-text">R$10.000,00</p>
+                </div>
+                <img  class="seta-img" src="../Assets/seta.jpg">
+
+                <div class="currency-container">
+
+                    <img src="../Assets/imagem-eua.png"  id= "currency-img" alt="imagem-eua">
+                    <p class="currency-name" id="currency-name">Dólar americano</p>
+                    <p class="currency-value" id="currency-value-text">US$ 2.000</p>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+<script src="../js/conversor.js"></script>
+
+</html>
